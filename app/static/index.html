@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radar de Estágios em Ciências Sociais</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Radar de Estágios em Ciências Sociais</h1>
+      <p class="lead">
+        Encontre vagas focadas em Sociologia, Antropologia e Ciência Política sem ruído de áreas
+        não aderentes.
+      </p>
+
+      <form id="filtros" class="filters">
+        <label>
+          Localidade
+          <input id="localidade" name="localidade" placeholder="Ex.: São Paulo, SP" />
+        </label>
+
+        <label>
+          Área específica
+          <select id="area" name="area">
+            <option value="">Todas</option>
+            <option value="Pesquisa Quantitativa">Pesquisa Quantitativa</option>
+            <option value="Pesquisa Qualitativa">Pesquisa Qualitativa</option>
+            <option value="Políticas Públicas">Políticas Públicas</option>
+          </select>
+        </label>
+
+        <button type="submit">Buscar vagas</button>
+      </form>
+
+      <section>
+        <h2>Resultados</h2>
+        <p id="meta"></p>
+        <div id="lista" class="list"></div>
+      </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
